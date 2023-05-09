@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form (ngSubmit)="onSubmit()">
+    <label for="backgroundColor">Kolor tła:</label>
+    <input id="backgroundColor" [(ngModel)]="styles.backgroundColor" name="backgroundColor" type="color">
+
+    <label for="color">Kolor tekstu:</label>
+    <input id="color" [(ngModel)]="styles.color" name="color" type="color">
+
+    <label for="border">Obramowanie:</label>
+    <input id="border" [(ngModel)]="styles.border" name="border" type="text">
+
+    <label for="boxShadow">Cień:</label>
+    <input id="boxShadow" [(ngModel)]="styles.boxShadow" name="boxShadow" type="text">
+
+    <button type="submit">Zastosuj style</button>
+  </form>
+
+</body>
+
+</html>
